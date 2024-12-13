@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="index.css">
+        <title>Start Page</title>
+    </head>
+
+    <body>
+
+        <div id="clock">
+            <h1 id="time"></h1>
+        </div>
+        <div id="search">
+            <input type="search" id="search-box" name="q" placeholder="Search something..." onkeypress="Javascript: if (event.keyCode==13) search();" autofocus></input>
+        </div>
+        <div id="fast-links">
+            <div class="icon-container">
+                <a href="https://itch.io/" target="_blank">
+                    <img src="./Assets/Icons/github.png" alt="Website Icon" class="small-icon" href ="https://thesleety.github.io">
+                    <p class="icon-label" style="text-align: center;">Github</p>
+                </a>
+            </div>
+            <div class="icon-container">
+                <a href="https://youtube.com" target="_blank">
+                    <img src="./Assets/Icons/youtube.png" alt="Website Icon" class="small-icon" href ="https://youtube.com">
+                    <p class="icon-label" style="text-align: center;">Youtube</p>
+                </a>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+
+    <div id="footer">
+        <footer>
+            <p>&copy;SleetyDev 2024</p>
+        </footer>
+    </div>
+</html>
