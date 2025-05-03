@@ -1,19 +1,47 @@
+:root {
+    --background: rgb(16, 15, 15);
+    --text-normal: #FFFCF0;
+    --text-dark:  #E6E4D9;
+    --text-secondary: #D14D41;
+}
+
+@font-face {
+    font-family: Cascadia;
+    src: url('Assets/Font/CaskaydiaMonoNerdFontMono-Regular.ttf');
+  }
+
+* {
+    font-family: Cascadia;
+}
+
 body {
     position: relative;
     font-family: sans-serif;
-    color: rgb(250 250 250);
-    background-color: rgb(3 7 18);
+    color: var(--text-normal);
+    background-color: var(--background);
 }
 
 #clock{
-    margin-top: 180px;
+    margin-top: 100px;
     text-align: center;
     box-sizing:border-box;
     font-size: 40px;
 }
 
+#welcome-text{
+    margin-top: 100px;
+    margin-left: 160px;
+    font-size: 32px;
+}
+#quick-links{
+
+    margin-left: 125px;
+    margin-top: -15px;
+    font-size: 16px;
+}
+
 #search{
-    text-align: center;
+    margin-left: 160px;
 }
 
 #footer{
@@ -24,46 +52,41 @@ body {
     text-align: center;
 }
 
-#fast-links{
-    display: flex;
-    flex-direction: row;
-   
-    margin-top: 20px;
-    justify-content: center;
-
+#quick_links_text{
+    font-size: 24px;
+    margin-left: 160px;
+    color: var(--text-secondary);
 }
 
-.small-icon {
-    width: 60px;
-    height: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+ul{
+    list-style-type: none;
+}
 
 a {
     text-decoration: none;
-    color: rgb(250 250 250);
-
+    color: var(--text-normal);
 }
 
 input {
     transition: border 0.15s ease-in-out;
-    border: 3px solid rgb(156 163 175);
-
-    background-color: rgb(3 7 18);
-    color: rgb(250 250 250);
-    border-radius: 4px;
+    border: 3px solid #948979;
+    caret-shape:bar;
+    background-color: var(--background);
+    color: var(--text-normal);    
     box-sizing: border-box;
-
     width: 45%;
     padding: 6px 10px;
     font-size: 20px;
 }
 input:focus{
     outline: none;
-    border: 3px solid rgb(250 250 250);
+    border: 3px solid var(--text-dark);
+}
+.link{
+    transition: font-size 0.15s ease-in-out;
 }
 
-img{
-    filter: invert();
+.link:hover{
+    color: var(--text-secondary);
+    font-size: 20px;
 }
